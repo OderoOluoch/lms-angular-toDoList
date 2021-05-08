@@ -1,0 +1,10 @@
+<div>
+    <h1>To do List</h1>
+    <hr>
+    <ul>
+        <li *ngFor='let task of tasks'>
+            {{ task.title}}
+            <app-task-detail [task]='task'></app-task-detail>
+        </li>
+    </ul>
+</div>
